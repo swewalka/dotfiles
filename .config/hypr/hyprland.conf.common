@@ -3,11 +3,7 @@
 source = ~/.config/hypr/keybinds_qwerty.conf
 source = ~/.config/hypr/windowrules.conf
 source = ~/.config/hypr/autostart.conf
-source = ~/.config/hypr/nvidia.conf
-source = ~/.config/hypr/monitors.conf
 
-
-bindl=,switch:Lid Switch, exec, ~/.config/hypr/switch.sh
 
 # unscale XWayland
 xwayland {
@@ -144,4 +140,5 @@ cursor {
     inactive_timeout = 10
     hide_on_key_press = true
     hide_on_touch = true
+
 }
