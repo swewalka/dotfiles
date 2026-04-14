@@ -3,7 +3,11 @@
 source = ~/.config/hypr/keybinds_qwerty.conf
 source = ~/.config/hypr/windowrules.conf
 source = ~/.config/hypr/autostart.conf
+source = ~/.config/hypr/nvidia.conf
+source = ~/.config/hypr/monitors.conf
 
+
+bindl=,switch:Lid Switch, exec, ~/.config/hypr/switch.sh
 
 # unscale XWayland
 xwayland {
@@ -47,7 +51,6 @@ general {
     border_size = 2
     col.active_border = rgba(ebdbb2ff) rgba(ebdbb2ff) 45deg
     col.inactive_border = rgba(928374ff)
-    no_border_on_floating = false
 
     layout = master # Use "dwindle" or "master" for alternative layout, binds for master below
 
@@ -113,7 +116,6 @@ master {
     new_on_active = before
     orientation = right
     mfact = 0.5
-    inherit_fullscreen = true
     allow_small_split = true
     special_scale_factor = 0.92
 }
@@ -129,7 +131,6 @@ misc {
     mouse_move_enables_dpms = true
     key_press_enables_dpms = true
     allow_session_lock_restore = true
-    new_window_takes_over_fullscreen = 2
     initial_workspace_tracking = 0
     font_family = IBM Plex Sans
     splash_font_family = IBM Plex Sans
@@ -140,5 +141,8 @@ cursor {
     inactive_timeout = 10
     hide_on_key_press = true
     hide_on_touch = true
-
 }
+
+debug {
+    disable_logs = false
+  }

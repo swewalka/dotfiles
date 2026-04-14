@@ -1,0 +1,22 @@
+# ~/.config/hypr/hyprpaper.conf
+
+wallpaper {
+    monitor = DP-6
+    path = /home/nepo/.config/hypr/wallpapers/shuttles.png
+    fit_mode = cover
+}
+
+wallpaper {
+    monitor = DP-5
+    path = /home/nepo/.config/hypr/wallpapers/shuttles.png
+    fit_mode = cover
+}
+
+wallpaper {
+    monitor = eDP-1
+    path = /home/nepo/.config/hypr/wallpapers/shuttles.png
+    fit_mode = cover
+}
+
+splash = false
+ipc = true

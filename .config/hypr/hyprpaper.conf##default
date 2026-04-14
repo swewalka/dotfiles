@@ -2,22 +2,21 @@
 
 wallpaper {
     monitor = DP-1
-    path = /home/nepo/.config/hypr/wallpapers/code_blocks_light.png
+    path = /home/nepo/.config/hypr/wallpapers/gruv-focus.png
     fit_mode = cover
 }
 
 wallpaper {
     monitor = DP-3
-    path = /home/nepo/.config/hypr/wallpapers/canvas-light.png
+    path = /home/nepo/.config/hypr/wallpapers/gruv-focus.png
     fit_mode = cover
 }
 
 wallpaper {
     monitor = HDMI-A-1
-    path = /home/nepo/.config/hypr/wallpapers/canvas-light.png
+    path = /home/nepo/.config/hypr/wallpapers/gruv-focus.png
     fit_mode = cover
 }
 
 splash = false
 ipc = true
-

@@ -43,6 +43,10 @@ binde = SHIFT, XF86AudioRaiseVolume, exec, playerctl -p spotify volume 0.02+
 binde = , XF86AudioRaiseVolume, exec, pamixer -i 2
 bind = , XF86AudioMute, exec, pamixer -t
 
+# Adjust screen brightness with fn keys on laptop
+bind = , XF86MonBrightnessDown, exec, brightnessctl set 5%-
+bind = , XF86MonBrightnessUp, exec, brightnessctl set +5%
+
 # ######## Windows control section ########
 # Move focus with mainMod + hjkl (Vim style)
 bind = $mainMod, H, movefocus, l
@@ -135,7 +139,6 @@ bind = $mainMod, mouse_up, workspace, e+1
 bind = $mainMod, MINUS, workspace, e-1
 bind = $mainMod, EQUAL, workspace, e+1
 
-
 # Screenshots with Flameshot
 #bind = $mainMod SHIFT, S, exec, flameshot gui --region all
 bind = $mainMod, S, exec, bash -lc 'grim -g "$(slurp)" - | wl-copy -t image/png && notify-send "📋 Screenshot copied"'
@@ -147,5 +150,3 @@ bind = $mainMod SHIFT, S, exec, bash -lc 'grim -g "$(slurp)" - | swappy -f -'
 # bind = $shiftMod, PRINT, exec, grimshot --notify copy area && grimshot --notify save area
 # Copy screen to buffer
 # bind = $controlMod, PRINT, exec, grimshot --notify save screen
-
-

@@ -159,9 +159,8 @@ tooltip {
     border-width: 2px;
     border-style: solid;
     border-color: #ebdbb2;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 4px 4px 0px;
     border-left: 0px;
-    border-right: 0px;
 }
 
 #network {
@@ -193,8 +192,8 @@ tooltip {
     border-style: solid;
     border-color: #ebdbb2;
     border-right: 0px;
-    border-left: 4px;
-    border-radius: 4px 0px 0px 4px;
+    border-left: 0px;
+    border-radius: 0px;
 }
 
 #pulseaudio.microphone {
@@ -249,6 +248,6 @@ tooltip {
     border-radius: 0px 4px 4px 0px;
     border-left: 0px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 4px;
     padding-right: 16px;
 }
