@@ -104,7 +104,6 @@ animations {
 }
 
 dwindle {
-    pseudotile = true
     preserve_split = true # you probably want this
     special_scale_factor = 0.92
     force_split = 2

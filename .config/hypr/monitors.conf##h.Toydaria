@@ -1,6 +1,6 @@
 monitor = DP-1, 2560x1440, 0x0, 1
 monitor = DP-3, 2560x1440, 2560x0, 1
-
+monitor = HDMI-A-1,1920x1080, 2560x0,1 ,mirror ,DP-1
 # Make workspaces persistent
 # Odd-numbered workspaces on DP-1 (second monitor)
 workspace = 1, monitor:DP-1, persistent:true
