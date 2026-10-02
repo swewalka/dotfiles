@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 if grep open /proc/acpi/button/lid/LID0/state; then
-    hyprctl keyword monitor "eDP-1, highres, 0x0, 1"
+    hyprctl eval 'hl.monitor({ output = "eDP-1", mode = "highres", position = "0x0", scale = 1 })'
 else
-    if [[ `hyprctl monitors | grep "Monitor" | wc -l` != 1 ]]; then
-        hyprctl keyword monitor "eDP-1, disable"
+    if [[ $(hyprctl monitors | grep -c '^Monitor') != 1 ]]; then
+        hyprctl eval 'hl.monitor({ output = "eDP-1", disabled = true })'
     fi
 fi
