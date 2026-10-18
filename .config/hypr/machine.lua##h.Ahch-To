@@ -1,0 +1,10 @@
+-- Only settings specific to this machine belong here.
+return {
+    brightness = true,
+    lid_switch = true,
+    configure_hardware = function()
+        hl.monitor({ output = "DP-6", mode = "preferred", position = "auto", scale = "auto" })
+        hl.monitor({ output = "DP-5", mode = "preferred", position = "auto", scale = "auto" })
+        hl.monitor({ output = "eDP-1", mode = "highres", position = "auto", scale = 1 })
+    end,
+}

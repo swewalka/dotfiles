@@ -1,0 +1,8 @@
+-- Only settings specific to this machine belong here.
+return {
+    configure_hardware = function()
+        -- No explicit monitor rules for unknown hosts.
+
+        -- No NVIDIA-specific settings for unknown hosts.
+    end,
+}

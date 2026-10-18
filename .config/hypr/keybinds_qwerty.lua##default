@@ -1,1 +1,0 @@
-require("keybinds_qwerty_common")({ brightness = false })

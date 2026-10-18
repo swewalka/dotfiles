@@ -1,0 +1,13 @@
+hl.curve("drag", { type = "bezier", points = { { 0.2, 1 }, { 0.2, 1 } } })
+hl.curve("pop", { type = "bezier", points = { { 0.1, 0.8 }, { 0.2, 1 } } })
+hl.curve("liner", { type = "bezier", points = { { 1, 1 }, { 1, 1 } } })
+
+hl.animation({ leaf = "windows", enabled = true, speed = 6, bezier = "drag", style = "slide" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 6, bezier = "drag", style = "slide" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 10, bezier = "pop", style = "popin 75%" })
+hl.animation({ leaf = "windowsMove", enabled = true, speed = 6, bezier = "drag", style = "slide" })
+hl.animation({ leaf = "border", enabled = true, speed = 1, bezier = "liner" })
+hl.animation({ leaf = "borderangle", enabled = true, speed = 30, bezier = "liner", style = "loop" })
+hl.animation({ leaf = "fade", enabled = true, speed = 5, bezier = "drag" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 7, bezier = "drag", style = "slidefade 40%" })
+hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 7, bezier = "drag", style = "slidefadevert 80%" })

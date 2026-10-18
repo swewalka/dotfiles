@@ -1,1 +1,2 @@
-style.css##h.Toydaria
+@import "shared/style.css";
+@import "machine.css";

@@ -1,0 +1,11 @@
+/* Desktop module edges: audio starts the group and power ends it. */
+#clock {
+    border-radius: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio {
+    border-left: 2px;
+    border-radius: 4px 0px 0px 4px;
+    margin-left: 4px;
+}
