@@ -1,0 +1,3 @@
+# Shared settings currently apply to every host, including Ahch-To and Toydaria.
+# Add host variants only when there is an actual machine-specific difference.
+:
